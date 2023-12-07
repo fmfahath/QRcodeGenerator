@@ -47,5 +47,24 @@ body{
     font-size: 16px;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-    margin: 20px 0;;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#imgBox{
+    width: 200px;
+    /* background-color: aquamarine; */
+    max-height: 0;
+    margin: 10px auto;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+
+#imgBox.show-imgBox{
+    max-height: 300px;
 }
